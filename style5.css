@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(205, 152, 72); */
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;    
+}
+.nav-part-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.nav-part-2 h5{
+    display: none;
+}
+.gola{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.nav-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.nav-part-2 h4{
+font-size: 18px;
+font-family: "Bona Nova SC", serif;
+
+font-weight: 400;
+}
+.nav-part-2 span{
+    color: blueviolet;
+    margin-left: 15px;
+}
+.nav-2{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: salmon; */
+    
+    gap: 90px;
+
+
+    
+
+}
+.nav-2 h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.content{
+    height: calc(100% - 140px);
+    width: 100%;
+    /* background-color: seagreen ; */
+}
+/* 100% -140px*\cal() mai hum kuch bhi minus krskte hai bss space ka dhayan rkhna*/
+.text-content{
+    height: 40%;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;/*Scroller upar krdiya */
+}
+.text-content::-webkit-scrollbar{
+    display: none;
+    background-color: transparent;
+    height: 7px;
+
+}
+.text-content::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+.elem{
+    flex-shrink: 0;/* Flex property shrinks the div this is to minimize that effect*/
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    /* border: 2px solid #000   ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elem h1{
+    font-size: 7vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+.image-content{
+height: 60%;
+width: 100%;
+
+display: flex;
+flex-wrap: nowrap;
+overflow-x: auto;
+
+}
+
+.image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.image-content::-webkit-scrollbar{
+   background-color: transparent;
+   height: 10px;
+display: none;}
+   .image-content::-webkit-scrollbar-thumb{
+    background-color: salmon;
+   }
+   @media(max-width:600px){
+    .nav{
+        height: 60px;
+        padding: 0 20px;    
+    }
+    .nav-part-1{
+       
+        gap: 0px;
+    }
+    .gola{
+        height: 16px;
+        width: 16px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    .nav-part-2{
+       
+        gap: 30px;
+    }
+    .nav-part-2 h5{
+        display: initial;
+    }
+    .nav-part-2 h5 i{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .nav-part-2 :nth-child(1){
+        display: initial;
+        font-size: 15px;
+        margin-right: 8px;
+    }
+    .nav-part-2 h4{
+    font-size: 18px;
+    display: none;
+    font-weight: 400;
+    }
+    .nav-part-2 span{
+        color: blueviolet;
+        margin-left: 10px;
+    }
+    .nav-2{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: salmon; */
+        gap: 10px;
+        padding:0 25px;
+    
+    
+        
+    
+    }
+    .nav-2 h3{
+        font-size: 2vw;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #444;
+    }
+    .content{
+        height: calc(100% - 130px);
+        width: 100%;
+        /* background-color: seagreen ; */
+    }
+    /* 100% -140px*\cal() mai hum kuch bhi minus krskte hai bss space ka dhayan rkhna*/
+    .text-content{
+        height: 35%;
+        width: 100%;
+        /* background-color: saddlebrown; */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;/*Scroller upar krdiya */
+    }
+    .text-content::-webkit-scrollbar{
+        /* display: none; */
+        background-color: transparent;
+        height: 4px;
+    
+    }
+    .text-content::-webkit-scrollbar-thumb{
+        background-color: orange;
+        
+    }
+    .elem{
+        flex-shrink: 0;/* Flex property shrinks the div this is to minimize that effect*/
+        height: 100%;
+        width: fit-content;
+        /* background-color: aqua; */
+        /* border: 2px solid #000   ; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .elem h1{
+        font-size: 14vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+    .image-content{
+    height: 65%;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+    }
+    
+    .image-content img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex-shrink: 0;
+        object-position: center;
+    }
+    .image-content::-webkit-scrollbar{
+       background-color: transparent;
+       height: 4px;
+       display: initial;
+      
+
+    }
+       .image-content::-webkit-scrollbar-thumb{
+        background-color: salmon;
+       }
+   }
+   .image-content img:nth-child(3){
+    object-position: left;
+   }
+   
